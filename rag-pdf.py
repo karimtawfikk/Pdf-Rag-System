@@ -13,7 +13,6 @@ CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 200
 
 class SimpleModelSelector:
-
     def __init__(self):
         self.llm_models = {"openai": "GPT-4", "ollama": "Llama3"}
 
@@ -52,7 +51,6 @@ class SimpleModelSelector:
 
 
 class SimplePDFProcessor:
-
     def __init__(self, chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP):
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
@@ -96,7 +94,6 @@ class SimplePDFProcessor:
 
 
 class SimpleRAGSystem:
-
     def __init__(self, embedding_model="openai", llm_model="openai"):
         self.embedding_model = embedding_model
         self.llm_model = llm_model
